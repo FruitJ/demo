@@ -1,0 +1,300 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+/* 根容器 */
+#root {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    margin: 20px auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, .2);
+    width: 800px;
+    height: 500px;
+    /* background-color: #F5F5F5; */
+}
+
+/* 视口 */
+#root .viewport {
+    position: relative;
+    z-index: 0;
+    padding-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(5px); */
+    background: rgba(255, 255, 255, .2);
+}
+
+/* 封面 */
+#root .viewport .cover {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    /* background-color: antiquewhite; */
+}
+
+#root .viewport .cover img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 介绍 */
+#root .viewport .show-self {
+    position: relative;
+    z-index: 10;
+    margin: 20px auto;
+    width: 400px;
+    height: 100px;
+    color: #FFF;
+    text-shadow: 0 0 2px #F00;
+    /* background-color: blueviolet; */
+}
+
+/* 介绍 - 子节点【div】通用样式 */
+#root .show-self .song {
+    overflow: hidden;
+    margin: 0 auto 5px;
+    width: 380px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* background-color: darkcyan; */
+}
+
+/* 歌词 */
+#root .viewport .lrc {
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0px 0px 2px 3px rgba(0,0,0,.3) inset;
+    width: 400px;
+    height: 120px;
+    /* background-color: chartreuse; */
+}
+
+/* 歌词 - 幕布 */
+#root .viewport .lrc .lrc-curtain {
+    position: relative;
+    /* top: -200px; */
+    transform: translateY(0px);
+    z-index: 5;
+    width: 100%;
+    /* height: 800px; */
+    transition: all 0.5s ease 0s;
+    /* background-color: darkkhaki; */
+}
+
+#root .lrc .lrc-curtain ul {
+    margin: 0;
+    padding: 0;
+}
+
+#root .lrc-curtain ul li {
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /* height: 35px; */
+    list-style: none;
+    text-align: center;
+    color: #FFF;
+    /* line-height: 35px; */
+    /* background-color: darkorange; */
+}
+
+#root .lrc-curtain ul li.active {
+    color: #FFF;
+    text-shadow: 0 0 2px #F00;
+}
+
+/* 控制条 */
+#root .viewport .control-bar {
+
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0,0,0,.2);
+}
+
+#root .control-bar .btn {
+    float: left;
+    position: relative;
+    width: 200px;
+    height: 100%;
+    transition-duration: .5s;
+    color: rgba(255,255,255,.5);
+}
+
+#root .control-bar .btn:hover {
+    color: #FFF;
+}
+
+#root .control-bar .btn i,
+#root .control-bar .btn div {
+    float: left;
+    padding: 0 5px;
+    height: 100%;
+    line-height: 50px;
+    /* background-color: darkviolet; */
+    font-size: 28px;
+    font-weight: blod;
+}
+
+#root .btn div.play-pause {
+    position: relative;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#root .btn div.play-pause i {
+    position: absolute;
+}
+
+#root .btn div.play-pause i.pause {
+    display: none;
+}
+
+#root .btn i.next {
+    position: absolute;
+    right: 20px;
+}
+
+#root .control-bar .play-bar {
+    float: left;
+    width: 400px;
+    height: 100%;
+    /* background-color: deeppink; */
+}
+
+#root .control-bar .play-bar .info {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    /* background-color: forestgreen; */
+}
+
+#root .play-bar .info div {
+    float: left;
+    transition-duration: .5s;
+    color: rgba(255,255,255,.5);
+}
+
+#root .play-bar .info div:hover {
+    color: #FFF;
+}
+
+#root .play-bar .info .time {
+
+    position: absolute;
+    right: 0;
+}
+
+#root .play-bar .info .name {
+    overflow: hidden;
+    width: 252px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#root .control-bar .play-bar .p-bar {
+    position: relative;
+    margin: 10px auto 0;
+    width: 380px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#root .play-bar .p-bar .i-bar {
+    width: 100px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+#root .play-bar .p-bar .slider {
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top: -5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+}
+
+#root .control-bar .func {
+    float: left;
+    width: 200px;
+    height: 100%;
+    /* background-color: deepskyblue; */
+}
+
+#root .control-bar .func .download {
+    padding: 0 5px;
+    font-size: 30px;
+    line-height: 50px;
+    transition-duration: .5s;
+    color: rgba(255,255,255,.5);
+}
+
+#root .control-bar .func .download:hover {
+    color: #FFF;
+}
+
+#download-link {
+    display: inline-block;
+    /* width: 40px;
+    height: 30px;  */
+}
+
+#root .control-bar .func .i-volume {
+    display: inline-block;
+}
+
+#root .func .i-volume .p-bar {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    margin: 0 0 0 10px;
+    width: 100px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+#root .i-volume .p-bar .i-bar {
+    width: 20px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+#root .i-volume .p-bar .slider {
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top: -5px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+}
+
+#root .control-bar .func .volume {
+    padding: 0 5px;
+    font-size: 30px;
+    line-height: 50px;
+    transition-duration: .5s;
+    color: rgba(255,255,255,.5);
+}
+
+#root .control-bar .func .volume:hover {
+    color: #FFF;
+}

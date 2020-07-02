@@ -1,0 +1,49 @@
+@font-face {font-family: "lxMusic";
+  src: url('iconfont.eot?t=1593589074478'); /* IE9 */
+  src: url('iconfont.eot?t=1593589074478#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAV8AAsAAAAACsgAAAUvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCECgqHVIYeATYCJAMkCxQABCAFhGEHdRszCcgusG3kM2WTOjnOLWy7EG2AoD8dIvh+rew3f3Y5wGwJJZADQnXngiyBhQrLVDyQ3wmoxEXdlU5bGQKAeqIQsmKfFMcgc4DkrwIMJVL38zUAF1XAiLW275ZMqqglFSw0EYnMlUBkSFSoxNOSSPQCTrC09vvt//fzx1KvHl6Fpn2BU4wOi6yNNgse0GgY0dw44I0GViIT8KmAZzP+nsCrCdQNxkNgC2OSskBHTtopEHsEFAE6Pps8hRqqxnLMkbm4DCLV7AzrF5fMj48/pvN0yJQS6VrLtkXzIazlLYh0dcWYp8dwU58HwnEkTATIibuxvusQ2ImJYKt/fq/QDqA7TMCWtUa1eq1la6vwFcGiWxAdV4BwP2mp0F1OgLLSeP/lVVQlGVHG6JqAA9rqzMpVRJlWD1GitUQErS1ETuFDVCiCiCpFF5EoCJsM+Nr23QG6AWIUIPYRLPRkArpkYtI+/Sy3dLT7mR0MDbvq2QbKnda36snPLgO/bUVfsXFgew3jlaJ99XarBcodgph7I1k5g63LjGV2Vj+z0madmz3Qtqaxolt37pZjvN1nDEPTJGlR9rY16IAJPmwLJWCGqr5n3PeenzKKetZNUJarx8ai+npNIyJtG9TAC+b28zAG9ageLCnq6mO/p35bdTlwzFx/zonmwpXJ8pCT6dkPn9J/FW4eOnLGD1qPnLhTxzzPX1nKYUYWlqypJc1tcnBxfrhOs7a/aSkbGGGGLaT9G3ur2IpDFWqNHLYd22uPHrUe1A1t766AuG15Z8tKPjiqGbNW8JE68YyfEoGdMiNNnU1Js7oHZ+/2ummtaWF9E6PhpLrCwhprM5vmQinWbGNm3WLOKWgJvYKpTQ1cbbtz2YBj2qBznnaSp03Wjezke4WmvlFGxssGlEgVQ8aokDJt0Ei0NC4tTdVwmXuCx0f2s+GnwXi4f9m0+uxqfM59BrgA7Khptqkpzqx22hvGc0y4XVztAAwfG/+MjuL0yi8KZc/lckANA32GWFZGXOnTPxIba2dhlDVYu7/z7rrQGuwxiu3rGWjW15qybo4p8rFMR/5NrPobdpUrvGrqC4+5ffYA+f3Q/EwoG/xXHOjioJ3pZlnCOkjTXPNHJjd+59/tPrF9+DIu8dvd9ZF503ntUBDVBHozYp56bA64vyleh6M1TFai5+vwaN2hIHle00Gmeze1AegolcqQTrMlkNpZNB3G4RfSZf+o/fj/MySGfWN+BQ/BhnsfuVWXoH8dcvDDtS6Doh3kkN+hepb8wX0rzzmVf5WSvZa/h1e3EahZhn3+VqGujrs11B3v6zX0yl1KqOjlYjMYiE0wApvDeGFJwzRN+QMzhXUTEHl8Qw9IsEVew3hoIAydPcdm8AKb4D02h0/Ckt74oikD/gvr1oS2pWED7q0XKUeEEvHx8hpcwKMlpHKsUk9UnaxSCHgZiFKJCLlPYbhzkJwroSW4u4tbKB2LJEhefh+FmvJQKkmclNNiPKai6yGRiMalcroS8ZQuFUqlNMDVlYx7IBceLQY9C8ghBCWED0e5GjgEeGgSpL65kp49qiVTUcS/XwaEoiJCkFMfXyIHIhektawMhztc4JaOjdVJ8vTtQ62CGsUDStlDwtVWOZoYjpheYVGhCA2HNF5TiUIeJRdUlIhJBcBVno3Mq3MZnUG8lZdBnXSHWmSRIo9SlKMS1ahFXWWXQELVqPtyFRWEHOnw6SqJiCb4OsG1RAJCQnGlhEqB9DOJiBp3LQmqVj5y15PKkVpAqxSOFQAA') format('woff2'),
+  url('iconfont.woff?t=1593589074478') format('woff'),
+  url('iconfont.ttf?t=1593589074478') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1593589074478#lxMusic') format('svg'); /* iOS 4.1- */
+}
+
+.lxMusic {
+  font-family: "lxMusic" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lxjingyin:before {
+  content: "\e65e";
+}
+
+.lxshare:before {
+  content: "\e795";
+}
+
+.lxdownload:before {
+  content: "\e74d";
+}
+
+.lxyinliang:before {
+  content: "\e662";
+}
+
+.lxpause:before {
+  content: "\e653";
+}
+
+.lxplay1:before {
+  content: "\e625";
+}
+
+.lxnext-1:before {
+  content: "\e72e";
+}
+
+.lxprevious-1:before {
+  content: "\e731";
+}
+

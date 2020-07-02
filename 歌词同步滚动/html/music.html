@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/music.css">
+</head>
+
+<body>
+    <!-- 根容器 -->
+    <div id="root">
+        <!-- 视口 -->
+        <div class="viewport">
+            <!-- 封面 -->
+            <div class="cover">
+                <img src="" alt="">
+            </div>
+            <!-- 介绍 -->
+            <div class="show-self">
+                <!-- 歌曲名 -->
+                <div class="song song-name"></div>
+                <!-- 歌手名 -->
+                <div class="song song-singer"></div>
+                <!-- 专辑名 -->
+                <div class="song song-album"></div>
+            </div>
+            <!-- 歌词 -->
+            <div class="lrc">
+                <!-- 歌词幕布 -->
+                <div class="lrc-curtain">
+                    <ul>
+                       <!-- js 动态填充 -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 控制条 -->
+            <div class="control-bar">
+                <!-- 按钮区域 -->
+                <div class="btn">
+                    <i class="lxMusic prev">&#xe731;</i>
+                    <div class="play-pause">
+                        <i class="lxMusic play">&#xe625;</i>
+                    </div>
+                    <i class="lxMusic next">&#xe72e;</i>
+                </div>
+                <!-- 播放条区域 -->
+                <div class="play-bar">
+                    <div class="info">
+                        <div class="name">
+                            <!-- js 动态填充 -->
+                        </div>
+                        <div class="time">
+                            <!-- js 动态填充 -->
+                        </div>
+                    </div>
+                    <div class="p-bar">
+                        <div class="i-bar">
+
+                        </div>
+                        <i class="slider music"></i>
+                    </div>
+                </div>
+                <!-- 其他功能区域 -->
+                <div class="func">
+                    <a id="download-link">
+
+                        <i class="lxMusic download">&#xe74d;</i>
+                    </a>
+                    <div class="i-volume">
+
+                        <i class="lxMusic volume">&#xe662;</i>
+                        <div class="p-bar">
+                            <div class="i-bar">
+    
+                            </div>
+                            <i class="slider s-volume"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/music.js"></script>
+</body>
+
+</html>
